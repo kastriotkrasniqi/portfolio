@@ -24,19 +24,13 @@ const Mouse = () => {
     };
 
     const onMouseEnterLink = (event) => {
-      const link = event.target;
-      if (link.classList.contains("cursorrito")) {
-        gsap.set(cursorOutline, { opacity: 0 });
-        gsap.to(cursorDot, { scale: 15, opacity: 0.3 });
-      }
+      cursorOutline.style.opacity = 0;
+      gsap.to(cursorDot, { scale: 16, opacity: 0.25 });
     };
 
     const onMouseLeaveLink = (event) => {
-      const link = event.target;
-      if (link.classList.contains("cursorrito")) {
-        gsap.to(cursorDot, { scale: 1, opacity: 1, cursor: "none" });
-        gsap.set(cursorOutline, { opacity: 1 });
-      }
+      gsap.to(cursorDot, { scale: 1, opacity: 1, cursor: "none" });
+      cursorOutline.style.opacity = 1;
     };
 
     document.addEventListener("mousemove", onMouseMove);
@@ -44,16 +38,7 @@ const Mouse = () => {
       link.addEventListener("mouseenter", onMouseEnterLink);
       link.addEventListener("mouseleave", onMouseLeaveLink);
     });
-
-    // Cleanup
-    return () => {
-      document.removeEventListener("mousemove", onMouseMove);
-      links.forEach((link) => {
-        link.removeEventListener("mouseenter", onMouseEnterLink);
-        link.removeEventListener("mouseleave", onMouseLeaveLink);
-      });
-    };
-  }, []); // Empty dependency array for mounting and unmounting
+  });
 
   return (
     <>
