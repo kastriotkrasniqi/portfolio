@@ -149,3 +149,64 @@ body {
 }
 
 /* HAMBURGER ICON END */
+
+
+
+/* BLOP ANIMATION */
+
+.blob_1 {
+  background: url("/portrait.JPG") center center;
+  background-size: cover;
+  border-radius:69% 31% 70% 30% / 30% 70% 30% 70%;
+  animation: blob_1 5s linear infinite;
+}
+
+@keyframes blob_1 {
+  0%,100% {
+  border-radius:69% 31% 70% 30% / 30% 70% 30% 70%;
+  }
+  30% {
+    border-radius:42% 58% 15% 85% / 65% 83% 17% 35% ;
+  }
+  50% {
+    border-radius:42% 58% 48% 52% / 77% 29% 71% 23% ;
+  }
+}
+/* BLOP ANIMATION END */
+
+
+
+/* FADE IN LEFT ANIMATION  */
+
+.in-left {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+  animation-duration: 500ms;
+  -webkit-animation-delay: 500ms;
+  -moz-animation-delay: 500ms;
+  -o-animation-duration:500ms;
+  animation-delay: 500ms;
+}
+
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-40px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}   
+
+/* FADE IN LEFT ANIMATION END  */

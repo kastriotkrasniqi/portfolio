@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="lg:hidden relative bg-[#0B0E13] flex justify-between text-white items-center px-4 h-16  border-b border-gray-800">
+      <div className="lg:hidden relative bg-[#0B0E13] flex justify-between text-white items-center px-4 h-16  border-b border-gray-800 z-10">
         <Link href="/" className="text-xl md:text-2xl font-bold tracking-wide">
           BLAZE
         </Link>
