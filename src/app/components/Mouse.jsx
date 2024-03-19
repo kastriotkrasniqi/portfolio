@@ -25,11 +25,11 @@ const Mouse = () => {
 
     const onMouseEnterLink = (event) => {
       cursorOutline.style.opacity = 0;
-      gsap.to(cursorDot, { scale: 16, opacity: 0.25 });
+      gsap.to(cursorDot, { width: "80px", height: "80px", opacity: 0.3 });
     };
 
     const onMouseLeaveLink = (event) => {
-      gsap.to(cursorDot, { scale: 1, opacity: 1, cursor: "none" });
+      gsap.to(cursorDot, { width: "5px", height: "5px", opacity: 1, cursor: "none" });
       cursorOutline.style.opacity = 1;
     };
 
