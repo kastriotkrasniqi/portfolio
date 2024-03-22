@@ -3,15 +3,15 @@ import ProgressBar from "../components/ProgressBar";
 import PaperAirplaneItem from "../components/PaperAirplaneItem";
 export default function About() {
   return (
-    <div className="w-full lg:w-3/4 bg-gray-100  overflow-auto">
-      <div className="in-left px-4 py-5 lg:py-20 lg:px-20">
+    <div className="w-full lg:w-3/4 bg-gray-100 min-h-screen overflow-auto">
+      <div className="in-left px-4 py-20 lg:px-20">
         <button className="py-2.5 px-4 text-gray-700 bg-gray-200 text-xs font-semibold">
           ABOUT
         </button>
         <h1 className="text-[30px] text-gray-900 font-extrabold mt-4">
           About me
         </h1>
-        <div className="relative w-full h-[400px] lg:w-[90%] lg:h-[580px]  mt-10 mb-8  border-8 border-gray-500/60">
+        <div className="relative w-full h-[300px]  md:w-[65%] lg:h-[500px]  mt-10 mb-8  border-8 border-gray-500/60">
           <Image src="/portrait.JPG" alt="portrait" layout="fill" />
         </div>
         <h1 className="text-[22px] text-gray-900 font-bold">
@@ -37,14 +37,14 @@ export default function About() {
         <div className="border-b-[0.5px] border-gray-400 my-8 "></div>
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 text-sm text-gray-500">
           <div className="w-full lg:w-1/2  flex  gap-12">
-            <ul>
+            <ul className="space-y-1">
               <li className="font-semibold text-gray-800">Birthday:</li>
               <li className="font-semibold text-gray-800">Age:</li>
               <li className="font-semibold text-gray-800">Address:</li>
               <li className="font-semibold text-gray-800">Email:</li>
               <li className="font-semibold text-gray-800">Phone:</li>
             </ul>
-            <ul>
+            <ul className="space-y-1">
               <li>04.10.1999</li>
               <li>24</li>
               <li>Rahovec, Kosovo</li>
@@ -53,14 +53,14 @@ export default function About() {
             </ul>
           </div>
           <div className="w-full lg:w-1/2 flex gap-8 lg:gap-12">
-            <ul>
+            <ul className="space-y-1">
               <li className="font-semibold text-gray-800">Nationality:</li>
               <li className="font-semibold text-gray-800">Study:</li>
               <li className="font-semibold text-gray-800">Deegre:</li>
               <li className="font-semibold text-gray-800">Interests:</li>
               <li className="font-semibold text-gray-800">Freelance:</li>
             </ul>
-            <ul>
+            <ul className="space-y-1">
               <li>Kosovo</li>
               <li>University for Business and Technology</li>
               <li>Bachelor</li>
@@ -81,7 +81,7 @@ export default function About() {
         </button>
       </div>
 
-      <div className="in-left px-4 py-5 lg:py-24 lg:px-20 bg-white flex gap-24">
+      <div className="in-left px-4 py-24 lg:px-20 bg-white flex flex-col lg:flex-row gap-24">
         <div className="flex flex-col lg:w-1/2 gap-5  text-sm">
           <h2 className="font-semibold text-[22px] text-gray-900 mb-8">
             Programming Skills
@@ -102,7 +102,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="in-left px-4 py-5 lg:py-24 lg:px-20 bg-gray-100 flex gap-24">
+      <div className="in-left px-4 py-24 lg:px-20 bg-gray-100 flex flex-col lg:flex-row gap-24">
         <div className="flex flex-col lg:w-1/2 gap-5  text-sm">
           <h2 className="font-semibold text-[22px] text-gray-900 mb-8">
             Knowledge

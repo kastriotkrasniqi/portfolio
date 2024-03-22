@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="lg:hidden relative bg-[#0B0E13] flex justify-between text-white items-center px-4 h-16  border-b border-gray-800 z-10">
+      <div className="lg:hidden relative bg-[#0B0E13] flex justify-between text-white items-center px-4 min-h-16 border-b border-gray-800 z-10">
         <Link href="/" className="text-xl md:text-2xl font-bold tracking-wide">
           BLAZE
         </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="h-full hidden lg:w-1/4 lg:flex flex-col justify-around px-16 py-20">
+      <div className="hidden h-full lg:w-1/4 lg:flex flex-col justify-around px-16 py-20">
         <Link href="/" className="text-3xl font-extrabold tracking-widest">
           BLAZE
         </Link>

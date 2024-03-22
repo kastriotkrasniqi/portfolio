@@ -2,43 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-/* 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}  */
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
 
 /* CUSTOM CURSOR */
 
 .cursor-dot{
   width: 5px;
   height: 5px;
-  background-color:hsla(0, 0%, 0%, 0.5); 
+  background-color:hsla(0, 0%, 0%, 0.5);
 }
 
 .cursor-outline{
@@ -157,21 +127,20 @@ body {
 .blob_1 {
   background: url("/portrait.JPG") center center;
   background-size: cover;
-  border-radius:69% 31% 70% 30% / 30% 70% 30% 70%;
+  border-radius:45% 31% 40% 30% / 20% 50% 20% 50%;
   animation: blob_1 5s linear infinite;
 }
 
 @keyframes blob_1 {
-  0%,100% {
-  border-radius:69% 31% 70% 30% / 30% 70% 30% 70%;
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
-  30% {
-    border-radius:42% 58% 15% 85% / 65% 83% 17% 35% ;
-  }
+
   50% {
-    border-radius:42% 58% 48% 52% / 77% 29% 71% 23% ;
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 70%;
   }
 }
+
 /* BLOP ANIMATION END */
 
 
@@ -207,6 +176,6 @@ body {
      opacity: 1;
      transform: translateX(0);
   }
-}   
+}
 
 /* FADE IN LEFT ANIMATION END  */

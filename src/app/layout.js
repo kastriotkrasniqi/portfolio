@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} h-screen w-screen flex flex-col lg:flex-row`}
+        className={`${montserrat.className} h-screen flex flex-col lg:flex-row`}
       >
         <Mouse />
         <Navbar />
