@@ -179,3 +179,15 @@
 }
 
 /* FADE IN LEFT ANIMATION END  */
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  .cursor-outline {
+    border: 2px solid hsla(0, 2%, 60%, 0.5);
+  }
+  .cursor-dot{
+    background-color:hsla(0, 2%, 60%, 0.5);
+  }
+}

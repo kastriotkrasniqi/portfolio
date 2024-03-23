@@ -3,6 +3,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
+import ThemeSwitch from "./ThemeSwitch";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -22,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="lg:hidden relative bg-[#0B0E13] flex justify-between text-white items-center px-4 min-h-16 border-b border-gray-800 z-10">
+      <div className="lg:hidden relative bg-[#0B0E13] flex justify-between text-white items-center px-4 min-h-16 border-b border-gray-800 z-10 ">
         <Link href="/" className="text-xl md:text-2xl font-bold tracking-wide">
           BLAZE
         </Link>
@@ -54,7 +55,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="hidden h-full lg:w-1/4 lg:flex flex-col justify-around px-16 py-20">
+      <div className="hidden h-full lg:w-1/4 lg:flex flex-col justify-around px-16 py-20 dark:bg-[#222222]">
         <Link href="/" className="text-3xl font-extrabold tracking-widest">
           BLAZE
         </Link>
@@ -63,8 +64,8 @@ const Navbar = () => {
           {navLinks.map((link, index) => (
             <li
               key={index}
-              className={`text-gray-500 hover:text-gray-800 text-base ${
-                pathname === link.href ? "text-gray-800 font-semibold" : ""
+              className={`text-gray-500 hover:text-gray-800 text-base dark:text-gray-300 ${
+                pathname === link.href ? "text-gray-800 font-semibold dark:text-white" : ""
               }`}
             >
               <Link href={link.href}>{link.label}</Link>
@@ -76,7 +77,7 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search"
-            className="outline-none py-3 border-b border-gray-300 w-full focus:border-gray-500"
+            className="outline-none py-3 border-b border-gray-300 w-full focus:border-gray-500 dark:bg-[#222222] dark:border-gray-500 dark:focus:border-gray-400"
           />
           <MagnifyingGlassIcon className="absolute w-[18px] h-[18px] right-0 top-[17px] text-gray-500 rotate-90" />
         </div>
@@ -84,9 +85,10 @@ const Navbar = () => {
         <div className="text-gray-400">
           <p>© 2024 BLAZE</p>
           <p>
-            Created by <span className="font-medium">Kastriot Krasniqi</span>
+            Created by <span className="font-medium dark:text-white">Kastriot Krasniqi</span>
           </p>
         </div>
+      <ThemeSwitch/>
       </div>
     </>
   );

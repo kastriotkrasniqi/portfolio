@@ -1,9 +1,9 @@
 const SocialNetworks = () => {
   return (
-    <ul className="flex space-x-4 pt-2">
+    <ul className="flex space-x-4 pt-2 ">
       <li>
-        <a href="">
-          <svg
+        <a href="" >
+          <svg className="dark:fill-white fill-black"
             height={18}
             width={18}
             xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@ const SocialNetworks = () => {
       </li>
       <li>
         <a href="">
-          <svg
+          <svg className="dark:fill-white fill-black"
             height={18}
             width={18}
             xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const SocialNetworks = () => {
       </li>
       <li>
         <a href="">
-          <svg
+          <svg className="dark:fill-white fill-black"
             height={18}
             width={18}
             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const SocialNetworks = () => {
       </li>
       <li>
         <a href="">
-          <svg
+          <svg className="dark:fill-white fill-black"
             width={18}
             height={18}
             xmlns="http://www.w3.org/2000/svg"
