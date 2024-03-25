@@ -2,6 +2,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
+import { BeatLoader, PuffLoader } from "react-spinners";
 
 const schema = z.object({
   name: z.string().min(3),
@@ -68,8 +69,9 @@ const ContactForm = () => {
         <div className="text-red-500 text-sm mt-1">{errors.message.message}</div>
       )}
       </div>
-      <button disabled={isSubmitting} type="submit" className="mt-4 text-white bg-black px-7 py-3.5">
-        {isSubmitting ? "Loading..." : "Send Message"}
+
+      <button disabled={isSubmitting} type="submit" className="mt-4 text-white bg-black px-7 py-3.5 min-w-[172px] text-center flex justify-center items-center">
+        {isSubmitting ? <PuffLoader color="white" size={24}/> : "Send Message"}
       </button>
       {errors.root && (
         <div className="text-red-500">{errors.root.message}</div>
