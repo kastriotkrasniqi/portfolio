@@ -2,7 +2,7 @@ const SocialNetworks = () => {
   return (
     <ul className="flex space-x-4 pt-2 ">
       <li>
-        <a href="" >
+        <a href="https://www.facebook.com/kastriotkrasnniqi/" target="_blank" >
           <svg className="dark:fill-white fill-black"
             height={18}
             width={18}
@@ -14,7 +14,7 @@ const SocialNetworks = () => {
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="https://twitter.com/boominati969" target="_blank">
           <svg className="dark:fill-white fill-black"
             height={18}
             width={18}
@@ -26,7 +26,7 @@ const SocialNetworks = () => {
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="https://www.instagram.com/kastriotkrasnniqi/" target="_blank">
           <svg className="dark:fill-white fill-black"
             height={18}
             width={18}
@@ -38,7 +38,7 @@ const SocialNetworks = () => {
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="https://www.linkedin.com/in/kastriot-krasniqi-955341299/" target="_blank">
           <svg className="dark:fill-white fill-black"
             width={18}
             height={18}

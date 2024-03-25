@@ -24,17 +24,30 @@ export default function About() {
         <div className="border-b-[0.5px] border-gray-400 my-8 dark:border-gray-500"></div>
 
         <p className="text-gray-500 text-[15px] leading-7 dark:text-gray-300">
-          Hi, my name is Adriano Smith and I began using WordPress when it first
-          began. I’ve spent most of my waking hours for the last ten years
-          designing, programming and operating WordPress sites.
+          {`Hi, I'm Kastriot, a 24-year-old from Kosovo. I pursued my passion for
+          technology by studying computer science for three years after high
+          school. Eager to refine my skills, I completed a six-month bootcamp in
+          web development, which propelled me into an internship as a back-end
+          web developer at a prominent agency. Within just three months, I
+          transitioned to a full-time role, where I've gained valuable
+          experience, where I've since been honing my skills in web
+          development..`}
         </p>
         <br />
         <p className="text-gray-500 text-[15px] leading-7 dark:text-gray-300">
-          One of my specialties is taking an idea from scratch and creating a
-          full-fledged platform. I go beyond to produce sites with a unique,
-          outstanding, contemporary look-and-feel. With extensive knowledge of
-          web mechanics, I’m able to optimize complex integrations to require
-          little-to-no maintenance while running on their own for years.
+          I have a solid foundation in managing and maintaining content
+          management systems (CMS) for multiple websites, ensuring their
+          seamless operation and efficient content delivery. Additionally, my
+          extensive experience includes implementing database schema changes and
+          optimizations, significantly enhancing system efficiency and
+          performance. With meticulous attention to detail, I adeptly manage
+          website hosting to ensure optimal performance and reliability,
+          providing users with a smooth browsing experience. Furthermore, I have
+          demonstrated proficiency in coordinating with remote development teams
+          through Git-based workflows, facilitating seamless collaboration and
+          version control. Remaining proactive in monitoring industry trends and
+          emerging technologies, I continuously seek opportunities to enhance
+          projects and keep them at the forefront of innovation.
         </p>
         <div className="border-b-[0.5px] border-gray-400 my-8 dark:border-gray-500"></div>
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 text-sm text-gray-500">
@@ -89,18 +102,17 @@ export default function About() {
             Programming Skills
           </h2>
 
-          <ProgressBar percentage={85} name="Javascript" />
-          <ProgressBar percentage={65} name="Html" />
-          <ProgressBar percentage={22} name="Css" />
+          <ProgressBar percentage={90} name="Laravel" />
+          <ProgressBar percentage={75} name="Javascript" />
+          <ProgressBar percentage={65} name="Tailwind" />
         </div>
         <div className="flex flex-col lg:w-1/2 gap-5  text-sm">
           <h2 className="font-semibold text-[22px] text-gray-900 mb-8 dark:text-white">
             Language Skills
           </h2>
 
-          <ProgressBar percentage={85} name="Javascript" />
-          <ProgressBar percentage={65} name="Html" />
-          <ProgressBar percentage={22} name="Css" />
+          <ProgressBar percentage={100} name="Albanian" />
+          <ProgressBar percentage={70} name="English" />
         </div>
       </div>
 

@@ -11,8 +11,8 @@ export default function Home() {
             KASTRIOT KRASNIQI
           </h1>
           <p className="text-gray-500 leading-7 dark:text-gray-300">
-            I am a Backend Developer at heart and create features that are best
-            suited for the job at hand.
+            Experienced Full Stack Developer with a knack for crafting tailored
+            solutions that optimize project impact.
           </p>
           <SocialNetworks />
         </div>
