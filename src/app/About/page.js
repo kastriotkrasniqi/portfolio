@@ -112,9 +112,9 @@ export default function About() {
 
           <ul className="text-gray-500 text-sm space-y-3 dark:text-gray-300">
             <PaperAirplaneItem name={"Laravel, Livewire, Alpine JS"} />
-            <PaperAirplaneItem name={"Vue, React, Next JS"} />
             <PaperAirplaneItem name={"PHP, Wordpress, MySQL"} />
             <PaperAirplaneItem name={"Javascript, Jquery, Ajax"} />
+            <PaperAirplaneItem name={"Vue, React, Next JS"} />
             <PaperAirplaneItem name={"Bootstrap, Tailwind"} />
             <PaperAirplaneItem name={"Git, Hosting"} />
           </ul>
