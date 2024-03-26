@@ -35,19 +35,7 @@ export default function About() {
         </p>
         <br />
         <p className="text-gray-500 text-[15px] leading-7 dark:text-gray-300">
-          I have a solid foundation in managing and maintaining content
-          management systems (CMS) for multiple websites, ensuring their
-          seamless operation and efficient content delivery. Additionally, my
-          extensive experience includes implementing database schema changes and
-          optimizations, significantly enhancing system efficiency and
-          performance. With meticulous attention to detail, I adeptly manage
-          website hosting to ensure optimal performance and reliability,
-          providing users with a smooth browsing experience. Furthermore, I have
-          demonstrated proficiency in coordinating with remote development teams
-          through Git-based workflows, facilitating seamless collaboration and
-          version control. Remaining proactive in monitoring industry trends and
-          emerging technologies, I continuously seek opportunities to enhance
-          projects and keep them at the forefront of innovation.
+          {`I possess a strong foundation in managing and maintaining content management systems (CMS) across multiple websites, ensuring their seamless operation and efficient content delivery. My extensive experience includes implementing database schema changes and optimizations, leading to significant enhancements in system efficiency and performance. With meticulous attention to detail, I proficiently manage website hosting to ensure optimal performance and reliability, thereby guaranteeing users a smooth browsing experience. Additionally, I have demonstrated proficiency in coordinating with remote development teams through Git-based workflows, facilitating seamless collaboration and version control. I remain proactive in monitoring industry trends and emerging technologies, consistently seeking opportunities to enhance projects and maintain their position at the forefront of innovation.`}
         </p>
         <div className="border-b-[0.5px] border-gray-400 my-8 dark:border-gray-500"></div>
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 text-sm text-gray-500">
