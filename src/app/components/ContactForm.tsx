@@ -2,7 +2,8 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
-import { BeatLoader, PuffLoader } from "react-spinners";
+import { PuffLoader } from "react-spinners";
+import { useRouter } from "next/navigation";
 
 const schema = z.object({
   name: z.string().min(3),
@@ -21,11 +22,17 @@ const ContactForm = () => {
   } = useForm<FormFields>({
     resolver: zodResolver(schema),
   });
+  const router = useRouter();
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log(data);
+      const encodedFormData = new URLSearchParams(data as any).toString();
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encodedFormData,
+      });
+      router.push("/thank-you");
     } catch (error) {
       setError("root", {
         message: "An error occurred while submitting the form.",
